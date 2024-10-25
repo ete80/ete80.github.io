@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Series to Pitch Converter with Playback</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #output, #sequenceOutput { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Number Series to Pitch Converter</h1>
+    
+    <!-- Number Series Input -->
+    <h2>Enter a Series of Numbers</h2>
+    <input type="text" id="numberSeriesInput" placeholder="Enter numbers separated by commas">
+    <button onclick="convertInputSeriesToPitch()">Convert Series to Pitch</button>
+
+    <!-- Fibonacci Generator -->
+    <h2>Fibonacci Sequence Generator</h2>
+    <label for="fibonacciCount">Number of Elements:</label>
+    <input type="number" id="fibonacciCount" value="5">
+    <button onclick="generateFibonacci()">Generate Fibonacci Sequence</button>
+
+    <!-- Sequence Outputs -->
+    <div id="output"></div>
+    <div id="sequenceOutput"></div>
+
+    <!-- Playback Button -->
+    <button onclick="playBack()">Play Sound</button>
+
+    <script>
+        let audioContext;
+        let currentPitches = [];
+
+        function convertInputSeriesToPitch() {
+            const series = document.getElementById('numberSeriesInput').value.split(',').map(Number);
+            currentPitches = convertNumbersToPitches(series);
+            document.getElementById('output').innerText = 'Pitches: ' + currentPitches.join(', ');
+        }
+
+        function generateFibonacci() {
+            const count = parseInt(document.getElementById('fibonacciCount').value);
+            let sequence = [0, 1];
+            for (let i = 2; i < count; i++) {
+                sequence.push(sequence[i - 1] + sequence[i - 2]);
+            }
+            currentPitches = convertNumbersToPitches(sequence);
+            document.getElementById('sequenceOutput').innerText = 'Fibonacci Sequence: ' + sequence.join(', ') + '\nPitches: ' + currentPitches.join(', ');
+        }
+
+        function convertNumbersToPitches(numbers) {
+            const pitches = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+            return numbers.map(num => pitches[num % 12]);
+        }
+
+        function playBack() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            const baseFrequency = 261.63; // Frequency of Middle C (C4)
+            currentPitches.forEach((note, index) => {
+                setTimeout(() => playTone(noteToFrequency(note, baseFrequency)), index * 500);
+            });
+        }
+
+        function noteToFrequency(note, baseFrequency) {
+            const semitoneSteps = {
+                'C': 0, 'C#': 1, 'D': 2, 'D#': 3, 'E': 4, 
+                'F': 5, 'F#': 6, 'G': 7, 'G#': 8, 'A': 9, 'A#': 10, 'B': 11
+            };
+            return baseFrequency * Math.pow(2, semitoneSteps[note] / 12);
+        }
+
+        function playTone(frequency) {
+            let oscillator = audioContext.createOscillator();
+            oscillator.frequency.value = frequency;
+            oscillator.type = 'sine';
+
+            oscillator.connect(audioContext.destination);
+            oscillator.start();
+            oscillator.stop(audioContext.currentTime + 0.5); // Play each note for 0.5 seconds
+        }
+    </script>
+</body>
+</html>

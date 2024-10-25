@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smoothie.js Time Series Graph</title>
+    <script type="text/javascript" src="smoothie.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+      #mycanvas1 {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Real-Time Data Visualization</h1>
+    <p>This is a real-time graph demonstrating varying data trends over time.</p>
+    <canvas id="mycanvas1" width="900" height="225"></canvas>
+    <script type="text/javascript">
+      (function() {
+        var line1 = new TimeSeries();
+
+        function appendRandomData() {
+          line1.append(new Date().getTime(), Math.random());
+
+          // generate a random time between 500 and 1500 milliseconds
+          var delay = 500 + Math.random() * 1000;
+          setTimeout(appendRandomData, delay);
+        }
+
+        // start the random data appending
+        appendRandomData();
+
+        var smoothie = new SmoothieChart({millisPerPixel:36,grid:{millisPerLine:3000},labels:{disabled:true},timestampFormatter:SmoothieChart.timeFormatter});
+        smoothie.addTimeSeries(line1, { strokeStyle:'rgb(255, 136, 0)', lineWidth:2 });
+        smoothie.streamTo(document.getElementById("mycanvas1"), 1000 /*delay*/); 
+      })();
+    </script>
+  </body>
+</html>

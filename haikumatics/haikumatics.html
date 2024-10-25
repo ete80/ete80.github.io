@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Haikumatics Calculation</title>
+</head>
+<body>
+    <h2>Silence #1</h2>
+    
+    <label for="age1">Age:</label>
+    <input type="number" id="age1" value="37"><br>
+
+    <label for="day1">Day:</label>
+    <input type="number" id="day1" value="1"><br>
+
+    <label for="month1">Month:</label>
+    <input type="number" id="month1" value="7"><br>
+
+    <label for="year1">Year:</label>
+    <input type="number" id="year1" value="2069"><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            // Parameters
+            let spike_scale = 400;
+            let age_spike_center = 30, age_spike_width = 10, max_age_spike = 100;
+            let day_spike_center = 15, day_spike_width = 5, max_day_spike = 50;
+            let month_spike_center = 6, month_spike_width = 2, max_month_spike = 60;
+            let year_spike_center = 2023, year_spike_width = 5, max_year_spike = 30;
+            let amplitude_sine_wave = 30;
+
+            // Input values
+            let age1 = parseFloat(document.getElementById("age1").value);
+            let day1 = parseFloat(document.getElementById("day1").value);
+            let month1 = parseFloat(document.getElementById("month1").value);
+            let year1 = parseFloat(document.getElementById("year1").value);
+
+            // Spike calculations
+            let age_spike = max_age_spike * Math.exp(-0.5 * ((age1 - age_spike_center) / age_spike_width)**2);
+            let day_spike = max_day_spike * Math.exp(-0.5 * ((day1 - day_spike_center) / day_spike_width)**2);
+            let month_spike = max_month_spike * Math.exp(-0.5 * ((month1 - month_spike_center) / month_spike_width)**2);
+            let year_spike = max_year_spike * Math.exp(-0.5 * ((year1 - year_spike_center) / year_spike_width)**2);
+            let sine_wave = amplitude_sine_wave * Math.sin(2 * Math.PI * (day1 + month1) / 13);
+
+            // Haiku Function value
+            let result = (1 + spike_scale * (age_spike + day_spike + month_spike + year_spike + sine_wave)) / (spike_scale + 1);
+
+            
+            document.getElementById("result").innerHTML = `Haiku Function Result: ${result.toFixed(2)}`;
+        }
+
+ 
+
+
+
+    </script>
+</body>
+
+
+</html>

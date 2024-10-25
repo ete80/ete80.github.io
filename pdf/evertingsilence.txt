@@ -1,0 +1,962 @@
+Everting Silence
+Notating Clandestine Forces
+(outline of a research-in-progress)
+Einar Torfi Einarsson
+Professor of Composition
+Iceland University of the Arts
+Thanks…good to be back…
+This talk titled [Everting Silence] revolves around a thread of my on-and-off research for the
+past years and must be considered to be an ongoing, or in-progress, research, -- as is
+maybe always the case with artistic research, since there is no end, no final say about the
+matter, nor conclusions as such (and maybe that can be said about knowledge in general).
+But I am going to frame the area of exploration where silence is not merely a Rest or a
+Pause (Hold)…it can also be thought as a secret, as an active intensive force, hiding itself in
+a complex web of interactions (a web of lies and truths? (fictions and facts, figments and
+materiality):
+This ongoing project asks the question: how can we rethink silence as a dynamic,
+performative, and notational material? And through that, it explores the aesthetics of the
+clandestine, or the multifaceted secret.
+1
++ “…the secret, defined as a content that has hidden its form in
+favor of a simple container, is inseparable from two movements
+that can accidentally interrupt its course or betray it, but are
+nonetheless an essential part of it: something must ooze from the
+box, something will be perceived through the box or in the halfopened
+box. The secret was invented by society; it is a sociological
+or social notion. Every secret is a collective assemblage. The secret
+is not at all an immobilized or static notion. Only becomings are
+secrets; the secret has a becoming”
++ ---D&G, TP. (emphasis mine)
+I want to start with this quote from Deleluze and Guattari’s A thousand Plateaus:
+Secrets are hush-hush, they are to be kept silent….but they usually don’t, not
+completely…they have the tendency to leak…
+Few keywords that I draw out of this quote:
+The secret is important, the perception is important – when you sense the secret you
+aren’t IN on it, you start to imagine all kind of things – this is also the social aspect is also
+important….BUT I WILL COME BACK TO THESE LINKS.
+Two movements (that can interrupt or betray): Influence and doublings?
+(influence on the surroundings, and the doubling within it
+as more secret aspect (secret group within a secret group))
+Continuing secret groups = Becoming (imperceptible)
+2
+Overview
++Rethinking silence as dynamic and performative element
++ Comparison, analogies...philosophy, science and mathematics
++Previous works: musical context
++ Early examples, Cage, Schnebel, Sciarrino…
++ My own works
++My prior and current silent works
++ Series of examples…
++ De/Re-coupling sound and silence
++ Two movements of the Instrument-performer hybrid
++ Notation: design and conceptual aspects
++ Collaborations
++Aesthetics of the Clandestine?
+--Before we continue This talk is organized into these sections, I will start by…exploring
+some conceptual landscape, focusing on comparisons, analogies and links with philosophy,
+physics and mathematics. These are conceptually important and part of my way of
+rethinking silence as a dynamic element.
+--following that: Music context: Not in anyway an exhaustive list, but an indicative one or a
+selection of what is important for my project….
+--After tracing these histories, I will move onto My own works, focusing on aspects where
+silence is a subject.
+--I will then end with a rough outline of something I’m calling aesthetics of the clandestine.
+((I think I have been subconsciously working on this for many years, only relatively recently
+realizing these connections, in that way this has been developing secretly within me,
+reflections))
+--
+3
+Colliding Spaces and Silent Actions
+3
+Rethinking silence as dynamic and
+performative element
++Silence as difference as quantum vacuum…
++Identity
++Emptiness
+The importance of Analogical thinking:
+The classical conception of silence can be compared to other classical concepts within
+philosophy on one hand, and physics, on the other hand.
+The concept of identity within philosophy did, or does, represent something static, fixed,
+something identical, it has a structural fixity, a grounded phenomenon. The post-structural
+conception of identity turns it into something dynamic, liquid (like the liquid identity
+Zygmunt Bauman speaks of), or as with Deleuze it is thought as Difference, which is, of
+course, never static nor fixed, but ongoing. We could of course take countless examples of
+this but you get the point. [QUOTE?]
+Similarly, the classical conception of empty space, namely the vacuum, was conceived of as
+being void of energy, particles, or activity. However, the quantum vacuum is far from being
+empty, it is immensely complex state, full of undefined activity, indeed full of secrets or
+secretive becomings. [QUOTE, FIGURE?]
+---
+The title of this talk makes use of another concept that comes from mathematics, namely
+eversion, which is the process of turning a shape inside out (without tearing or puncturing
+it) and challenges our intuition about space and shape…..but eversion has also been used in
+other contexts which is relevant for my approach. E.g. In psychoanalytic theory, "eversion"
+has been used to describe the process of turning unconscious desires or impulses outward
+4
+and expressing them in conscious behavior. For example, the psychologist Jacques Lacan
+used the term to describe the process of "mirror-stage inversion," in which an individual
+externalizes their inner conflicts and desires through symbolic acts and behaviors. Here I
+emphasise the making subconscious forces conscious. Metaphorically I connect this to
+physical, or performative movements, that are often subconsciously active in music
+performance, but also of imagined elements that may also be seen as subconscious
+elements of performance and interpretation. These are thus turned inside-out in the sense
+of becoming material (this will become clearer when we talk about notation).
+4
+Rethinking
+silence as
+dynamic and
+performative
+element
++ Silence as difference as
+quantum vacuum…
++ Identity
++ Emptiness
++ Eversion
++ The process of turning a
+shape inside out
+The title of this talk makes use of another concept that comes from mathematics, namely
+eversion (I use it as a verb), which is the process of turning a shape inside out (without
+tearing or puncturing it) and challenges our intuition about space and shape…..but eversion
+has also been used in other contexts which is relevant for my approach. E.g. In
+psychoanalytic theory, "eversion" has been used to describe the process of turning
+unconscious desires or impulses outward and expressing them in conscious behavior. For
+example, Jacques Lacan used the term to describe the process of "mirror-stage inversion,"
+in which an individual externalizes their inner conflicts and desires through symbolic acts
+and behaviors. Although I’m not working with Lacan’s concept, I emphasise this making
+subconscious forces conscious. Metaphorically I connect this to physical, or performative
+movements, that are often subconsciously active in music performance, but also of
+imagined elements that may also be seen as subconscious elements of performance and
+interpretation. These are thus turned inside-out in the sense of becoming material (this will
+become clearer when we talk about notation later on).
+But what fascinates me with the concept of eversion is the process associated, it has a very
+complex step-by-step process where something smooth like a sphere, which looks the
+same from all perspectives, and we could say perfect and pure like our classical concepts
+often are, but this is transformed into something quite different, and I must focus on the
+steps or stages, as they reveal many different shapes, perspectives and a hidden reality,
+another secret.
+5
+The figure here, highlights only few of the stages and without going deeper into the
+mathematics of this (which I don’t really understand) what I want to take from this is the
+energy involved in this process, there is pushing, pulling, bending, self-intersections, bulging
+and twisting.
+This is one abstract model I try to work with, where silence is the sphere (but only in an
+abstract sense) that goes through this process both conceptually and performatively.
+5
+Becomings…
++ Becoming-imperceptible
++ “becoming-molecular—which
+occur precisely at the point
+where the secret has lost both its
+content and its form, where the
+imperceptible, the clandestine
+with nothing left to hide, has
+finally been perceived.” ---
+D&G, TP.
++ Becoming-intense
+This transformation of the smooth sphere, as some ideal, a perfection, is a process with an
+end stage (in the mathematic version). To escape this final stage, this completion, I connect
+this process rather to becoming,… which can be seen in relation to Deleuze’s focus on
+becomings (becomings are secrets). There are many becomings in Deleuze and Guattari’s
+work, and here I connect three interrelated becomings: imperceptible, molecular, intense.
+READ
+(remember earlier quote: “secret defined as a content that has hidden its form”)
+“Some people can talk, hide nothing, not lie: they are
+secret by transparency, as impenetrable as water, in truth
+incomprehensible.”
+This is another kind of secret, which I look at as something dynamic residing in silence,
+ready to be perceived, a secret silence that doesn’t need sound to hide itself. Sound could
+therefore take this function of a form, which gives silence its content.
+And here is another secret becomings where content and form is lost, and the
+imperceptible is finally perceived = this is a recipe for silent music, perceived silence,
+performed silence, perceived secret, clandestine performance. But immediately a question
+6
+of how to approach that.
+We are looking at all this through the lens of silence and the process of eversion, so we are
+saying that silence must now be thrown on these becomings –intense, -imperceptible…
+-intensive silence (like temperature increase), so the silence is becoming-intense
+But what about this Content and form being lost = secret for the secret’s sake or silence for
+the silence’s sake = silence must become, not something fixed, but thrown onto the state of
+becoming (intense, imperceptible, etc.). We could also relate this to the conventional role of
+silence as rests, pause, etc., and having a certain role in the context of sound, which could be
+said to force upon silence a certain form and content, and so we can ask: what happens
+when we remove that context?
+---
+? Elsewhere D+G talk about infinite form of secrecy:
+About “the possibility of there being an infinite form of
+secrecy that no longer even requires a content
+and that has conquered the imperceptible.” ---this is
+another abstract model or even objective of my project,
+where we perceive secret that has conquered the
+imperceptible.
+6
+Becomings…
++ Becoming-imperceptible
++ Becoming-intense
++ “the possibility of there being an
+infinite form of secrecy that no
+longer even requires a content
+and that has conquered the
+imperceptible.” --- D&G, TP.
+? Elsewhere D+G talk about infinite form of secrecy:
+About “the possibility of there being an infinite form of
+secrecy that no longer even requires a content
+and that has conquered the imperceptible.” ---this is
+another abstract model or even the objective of my
+project, where we perceive a secret that has conquered the
+imperceptible.
+So through everting the conceptual silence, we enter
+becomings where the secret escapes its usual form/shape
+and content and we start to wonder what that might entail.
+7
+Separation vs.
+proximity
+spaces
++ Two points in space as different
+meeting points within the instrumentperformer
+space.
++ Separation spaces
++ Proximity spaces
++ Open sets
+Back to mathematics, where two other concepts, from topology can be found: separation
+spaces and proximity spaces.
+(About these concepts in mathematics)
+Separation space is a type of topological space where any two distinct points have disjoint
+neighborhoods. In other words, for any two points in the space, there exist open sets
+around each point that do not contain the other point. But they have an area, they have
+surroundings. Intuitively, this means that points in a separation space can be separated
+from each other by open sets.
+Every point in an open set has a "room" around it that is also contained in the set (that
+room is part of it). An open set does not contain any of its boundary points, which are the
+points that are "on the edge" of the set. These spaces are important when I start to think
+about performative microspaces and movements within them.
+((On the other hand, a proximity space is a more general concept that allows for points to
+be "near" each other without necessarily being separated by open sets. It defined how
+close and when two points are considered near each other. A proximity space defines a
+relation between points that captures their closeness. For example, a proximity space
+might define a "nearness" relation that says that two points are close if they are within a
+8
+certain distance of each other. Unlike separation spaces, proximity spaces do not require that
+any two points be separated by open sets.))
+The two movements, or simply two points, be it locations or spaces of activity, as separated
+worlds or approaching each other.
+These are inspirational elements but also create a powerful analogy on a conceptual level.
+(this image is a visualization of the process of eversion which I’m using as an analogy for
+layers of silence, the process of rethinking it but also imagining the interactions of different
+parts of silence, what parts are active within silence). This I have to relate to the instrumentperformer
+phenomenon.
+8
+Separation vs. proximity spaces
++Two points in space as different
+meeting points within the
+instrument-performer space.
++Separation spaces
++Proximity spaces
++Open sets
+To clarify where I’m going with this: I’m connecting this to the instrument-performer space.
+SS have open-sets, an area of activity, but proximity spaces define their nearness, their
+closeness, or when they can be considered to enter that space: I’m thinking this, again, as a
+process, a movement of two points, which have their separation spaces, where they can be
+active, but once they are close enough they start to interact differently, they enter their
+proximity spaces.
+I am connecting these ideas about spaces to the Instrument-Performer situation, and
+importantly, as microspaces of physical activity:
+Performer’s hands (as points in space)
+Performer’s hands vs. mouth (as points in space)
+Performer’s fingers (as points in space)
+And all these “points” I connect to Location points on the instruments and their open sets
+(this is the area surrounding hands and instruments).
+So for me this is about physicality, and here the conceptual dimension connects with the
+physical, and there is materiality. Each performed action is through this deemed as a space,
+having locality, vicinity, a direction perhaps, and a dimensionality.
+Etc. This will become clearer later on when we look at some concrete examples.
+9
+When we look closely at any two, or more, such meeting points and their respective spaces
+within this field of performative activity we see endless zones of proximity, which brings us
+back to Deleuze…
+(re-notations, )
+9
+Zone of proximity
++“We could also put it this way: Becoming is to emit particles
+that take on certain relations of movement and rest because
+they enter a particular zone of proximity. Or, it is to emit
+particles that enter that zone because they take on those
+relations. A haecceity is inseparable from the fog and mist
+that depend on a molecular zone, a corpuscular space.
+Proximity is a notion, at once topological and quantal, that
+marks a belonging to the same molecule, independently of
+the subjects considered and the forms determined.”
++D&G, TP
+In the outline of becoming-intense (and becoming-imperceptible) D & G speak of the zone
+of proximity.
+I think when we are within this zone there is no way discerning movement from rest, they
+become not-one but both simultaneously, that is their relation. This is an important
+interpretation for me, which says that movement or motion is within rest and vice versa,
+where I try to equate movement and rest. [movement and silence, but also turning
+movement into silence]
+This quote speaks of emitting particles, which is precisely what my project aims to
+experiment with, that is what kind of particles are emitted when rest and movement enter
+this zone.
+What is also important here is the Corpuscular space = tiny area, where activity of
+movement and rest is so condensed that it can only be imperceptible and highly intense.
+This also connects to the separation spaces but now emphasize their microscopic nature.
+Movements can take place in tiny spaces.
+D&G, TP. P.273
+10
+Zone of proximity
++“…it is because it constitutes a zone of proximity and
+indiscernibility, a no-man's-land, a nonlocalizable relation
+sweeping up the two distant or contiguous points, carrying
+one into the proximity of the other—and the borderproximity
+is indifferent to both contiguity and to distance.”
++D&G, TP
+D & G continue
+Indiscernibility = inability to distinguish = secret = within silence, folded.
+Here I am interpreting this as the collision of movement and rest, but also of sound and
+silence, because to make a sound we need action but for this kind of silence I’m after we
+also need actions, secretive actions. So, I also connect this to the instrument-performer
+space.
+The two points are either movement or rests, or forces of production and modulation, not
+production of sound but silences. (see instrument vs. performer = instrument is silent
+without the performer (force))
+See this simply as performer vs. instruments, but also action vs. silence, and layered
+movements (actions) of the performer.
+To be indifferent to distance? No matter the actual size of these spaces they should be
+equally dynamic.
+11
+D&G, TP. P.293
+11
+Summary
++The Secret as a dynamic hidden form
++Eversion as a (layered) process, as a verb (everting), as a
+becoming…
++Becoming-imperceptible = infinite secret = performed silence
++Separation spaces vs. proximity spaces = performative
+movements = locations and (split) physicality
++Zone of proximity = corpuscular spaces where movement and
+rest become indiscernible.
+This is the conceptual map reflecting certain elements from philosophy and mathematics.
+READ
+Split-physicality = schizoanalysis
+12
+Musical context - silence
++Types of silences in music
+Rests
+Pause
+Meanings
+After this conceptual network building I want to map a certain musical context, which my
+research grows out of. Of course myriad of musical influences are always at work so we can
+never have a complete map but I will highlight some important threads.
+First, we can quickly run through the types of musical silences I’m not really focusing on but
+are still, I think, relevant for any deconstruction of the phenomenon:
+Basic two categories:
+Rests: They are part of Shaping rhythm, shaping sound. = notated character = and can be
+seen as the secret of the first kind, that hides inbetween sounds.
+Pauses: articulation, breath, dramatic (tensions) = interpretive factor that creates: Nuance,
+tension, even Climax = it’s a different kind of secret that isn’t notated. Frozen moment.
+Importantly, they are part of the perception mechanism of music and have a great impact
+on the meaning of music? Another important element to consider is: that these silences, of
+both categories, are often communicated through physical gestures in performance, i.e.
+they form another layer in the semiotics of music.
+--
+Jennifer Judkins in her article “The Aesthetics of Silence in Live Musical Performance''
+mentions “long unmeasured silences are given individual meaning and form by the tonal
+and rhythmic material surrounding them (their musical edges) and they are characterized
+13
+both by these edges and by physical gesture in performance” (Judkins 1997, 40)
+There is obviously a lot of literature on these aspects, but we are everting, which means we
+are not rejecting we are gaining perspectives.
+13
+Musical context - silence
++Early examples (humor, critique, futures…)
++Samuel (aka. Del Valle de Paz)
++Edward Schulhoff
++“Unsilencing” the Silence: Unacknowledged Silent Pieces
++ ---Eder Wilker Borges Pena
++OPUS v.26, n.3, set./dez. 2020
+But silence has also been employed in totally different ways, where it takes on a very
+different role within music:
+Philosophical role, aesthetic, critical, political, and within this lineage, there is an
+interesting early example, which I think shouldn’t be dismissed.
+These are late 19th century examples where silence was used as a critique on the
+development of music and this is done through humor, but also to contemplate and
+speculate about the future of music. Importantly, it is only through notation that these
+particular silences can communicate.
+This interesting article, Unsilencing the silence, highlights these early histories of silent
+music, which I will not go deep into at this point, but I will take few examples.
+We should not dismiss any of these histories…
+14
+Samuel (aka. Del Valle de Paz)
+Il Silenzio (1896)
+First one by Samuel (aka. Del Valle de Paz) – Italian pianist and professor in Florence
+Il Silenzio -- Published in La Nuova Musica
+His self-claimed humorous piece critiques the quality of
+pieces previously published in the journal and some
+practices of so-called modern music, or, the avant-garde
+of the time. The core of the joke is that the pieces
+published were so bad and of such poor quality that
+silence was preferable: “if you have nothing good to say
+then remain silent.”
+But still, I think there is something more here than
+humor, it points to a landscape of rests and movements,
+15
+where phrasings and dynamics become foregrounded. For
+me this is not empty music but the beginning of thinking
+about dynamic silence (even glimpsing the zone of
+proximity where silence starts to behave like sound).
+15
+Samuel (aka. Del Valle de Paz)
+Il Silenzio (1896)
+Samuel (aka. Del Valle de Paz)
+Il Silenzio
+Another interesting thing about these pieces is that they are quite active notationally,
+Even though the message intended was perhaps emptiness, the notational image
+communicates other elements. And importantly this approach permits a certain
+play with contradictions and imagination of possibilities, e.g., the entangled
+accidentals, and my favourite: the trilling silence, the simultaneous ritardando and
+accelerando, and the crescendo silence. In this sense the piece is a challenge to our
+imagination, an invitation to rethink silence as material.
+ZOOM-IN
+16
+Erwin Schulhoff (b. 1894)
+Fünf Pittoresken, III: In Futurum (1930)
+Similar thing is happening with this piece by the Dada influenced Czech composer
+Erwin Schulhoff. But here he is framing the piece as a
+speculation about the future, as the title suggests, not as
+a humorous critique. But we see again how the notation
+allows the imagination to run a bit wild.
+17
+Erwin Schulhoff (b. 1894)
+Fünf Pittoresken, III: In Futurum (1930)
+But not as wild as the previous example (which is curious as this one speculates about the
+future), the other one did include many more contradictions, so Samuel’s piece somehow
+stumbled upon a very interesting dimension of notation, namely its powers of fiction.
+But here we have Gestures: upwards/downwards movements, rests in motion. We are
+entering the zone of proximity here, but only on paper.
+Conclusion: playful, Notational fantasy, speculation = never thought for performance, or as
+performative score, but nevertheless they do open a door to imagination? That character is
+important to my approach.
+18
+Musical context
++John Cage’s silence
+Roughly 50 years later we have Cage’s silence, which is a Silence performed! (essentially
+about performance also) = stillness = inactive performer = active ears = environment enters
+= mode of listening
+Two aspects from the performer’s perspective: (1) definition of silence as inactivity, (2)
+what Tudor added: between the movements: the intensified action in the silent landscape
+is very interesting (because only then silent action becomes perceptible).
+Silence is here questioned for the listener (there is no silence, only new layer of sound, the
+environment is full of activity), but not for the performer (silence = inaction).
+The piece Opens up a listening space through silence, and that is what I’m taking from it,
+the threshold space where environmental sounds leak through = this is the secret in Cage’s
+silence.
+---M arche Funèbre by Alphonse Allais
+19
+Musical context: Dieter Schnebel
+Another favourite of mine is Umrisse by Diter Schnebel. From the Mo-No – Music to read
+(which dates back to 1969).
+It combines all the elements we saw in the early works, but I think unknowingly. What
+interests me here is the layerings, the counterpoint of silences.
+This was never intended for performance just like the early examples, but rather for
+speculation, and to my knowledge there has never been any attempt to perform these
+pieces.
+The intention is different however, Schnebel is not thinking about the future or critiquing
+new music, but rather speculating or imagining a challenge, and maybe exploring the right
+of music to exist in this form alone, speculative form.
+But I took this as a challenge to find performative solutions, in that sense I call this
+theoretical composition, which obviously demands a reaction of an experimental nature.
+ZOOM-IN
+---
+http://www.medienkunstnetz.de/works/mo-no/
+20
+Musical context
++Salvatore Sciarrino
++Threshold of silence
++Textured silence
++Fragility
++Techniques + material
+Infinito Nero (1998)
+I will now move to another kind of musical context, which is equally important for my
+project.
+In the music of Sciarrino we have these areas that operate on the threshold of silence,
+drawing the ear into that zone, and in that fine-tuned zone we get a texture that is often
+integrated with the silence Cage unearthed, where the environment blends with fragile
+sounds. It’s more dynamic, but perhaps not silent enough. Sciarrino focuses on techniques
+and materials that can function within this zone and in that sense I explore similar tactics.
+So, elements of Sciarrino-like moments are to be expected, but they will never be notated
+like this, because for me these are notated sounds, not silences.
+ATH. temporality?
+21
+Musical context
++Helmut Lachenmann
++Brian Ferneyhough = notational spaces, layerings
++Evan Johnson
++Aaron Cassidy Unity Capsule (1976)
+Other important names, I have to mention, and which aspects I’m building on.
+--Lachenmann
+From L, I subsume the aspect of opening up performative spaces within instruments,
+allowing them presence as radical (equality) of material. Also the idea that sound is the
+meeting point of forces. For here I equate that with the idea that those “forces” can also
+have a proximity spaces (and preparation zone) and therefore not necessarily a sonic
+outcome. This relates to prescriptive notation which delineates actions as forces instead of
+descriptions of sonic outcomes, allowing to notate silence instead of sounds.
+Notational spaces = instrumental zones (all zones are possible) = meetings of forces, and of
+spaces. There is however no unpredictable interplay of forces in Lachenmann, but they are
+in F.
+ZOOM-IN
+Extract:
+--Ferneyhough = layerings, interruptions, contradictions, level of uncertainty and
+complexity, challenge of interpretation
+Extracted and explored further through these ideas of notating silence instead of sound.
+---
+22
+--E.Johnson =
+22
+Musical
+context
++ Helmut Lachenmann
++ Brian Ferneyhough =
+notational spaces, layerings
++ Evan Johnson
++ Aaron Cassidy
+Linke Hand Eines Apostels (2019)
+ZOOM-IN
+--E.Johnson = obviously layerings with the heritage of F, where indeed contradictions reside
+almost everywhere.
+But in this piece Linke Hand Eines Apostels (for harpsichord and 12 instruments) the
+material for the harpsichord is split between the manuals, where the lower manual
+(staffless L) is disengaged (meaning the keyboard doesn’t connect to the plectra
+mechanism, so the keyboard doesn’t activate the strings) and is termed “silent” in the
+performance notes. This can be interpreted as intensive silence or performed silence, its
+function is to be intensifying as silent counterpoint. It’s in many ways similar to the
+counterpoint explored by Schnebel we saw before, only now part of performance (we start
+to see a pattern). There are also impossibilities here and there in Evans works, that explore
+the fictional space of notation, which I think is also important to explore further.
+23
+Musical
+context
++ Helmut Lachenmann
++ Brian Ferneyhough =
+notational spaces, layerings
++ Evan Johnson
++ Aaron Cassidy
+What then renders these forces visible is a
+strange smile (or, First Study for Figures at
+the Base of a Crucifixion) (2008)
+And I must mention A. Cassidy =
+Layerings, prescriptive notation, where action within spaces gain foreground, and the
+complex instability structure, together with ideas of split physicality (schizoanalysis).
+24
+Musical context –
+summary:
+aspects subsumed
++ (Schulhoff)
++ Cage
++ Schnebel
++ Sciarrino
++ Lachenmann
++ Ferneyhough
++ Johnson
++ Cassidy
++ Aspects subsumed
+So, I’m trying to work with these conceptual worlds discussed earlier together with these
+aspects drawn from the works of these composers. Only certain aspects will be subsumed
+together with my own experiments.
+Schnebel = inclusive of impossibilities
+25
+My prior and current “silent” works
++Negative Dynamics Ia/b & II - (2011 / 2014)
++Underdetermined figures (Proto-scores) - (2015-)
++Stilla #1 - (2018)
++Other proportions: rough path by extinction (virgula ligatura) -
+(2022)
++Work in progress (Vcl.+rec.) – (2023-)
+On occasion I have written work that deal with the issue of silence (among other things),
+however they were not really framed within the context
+ND =
+Proto-scores = the zone of proximity first explored (somewhat subconsciously) = the precontact
+space as notated material, the imagination of action as notational material?
+?? I say notational material but this is also performative material, but imagination-of-action
+as material might not result in any action, but might influence actions…
+VIDEO: (underdetermined figures), (stilla #1), other proportions? (24:50)
+In the most simple and abstract way I think of this activity as colliding open sets as
+proximity spaces that potentially can collide
+26
+Negative Dynamics Ia/b – (string instr.)
+(2011)
+[Volume 70%]
+The first piece where I start to explore this area is Negative Dynamics I a/b.
+Two versions exist, one 30’’ and the other 30’ - I think here many of the seeds started to
+germinate, but it took me some time to figure it out.
+This piece was written as part of developing the concept of negative dynamics during my
+PhD. –
+In a way it was a result of trying to perform these pieces by Schnebel, these dynamic
+silences that fluctuate from zero into a negative parameter, subzero dynamics: –F. It lives on
+the other side of the dynamic axis and tries to open up that dimension.
+It is about the direction of energy, different form of communication, deliberately hiding vs.
+trying to convey something. How do you convey silence where a sound is an accident? The
+idea here was to reverse the conventional direction of communication, communicating
+silences where sounds are only accidental “pauses”. I now think reversal is the wrong
+approach but this opened up a new thinking space.
+Quote phd-thesis? As-slow-as-silent.
+--LISTEN
+Zoom in on the score:
+27
+Defining a space but placing information in the vicinity of that space = opening up the
+surroundings, the proximity space:
+The top line in all three pressure staves indicates the
+contact point between strings and fingers/bow. Utmost
+care and prudence should
+be taken when arriving at, and departing from, this line.
+The space above the line is in the realm of: as close as
+almost. The bottom line
+indicates extremes of pressure, stress and tension.
+The proportions of the spaces are here somewhat correct,
+ie. they represent them according to their actual sizes. This
+is something I’m questioning at the moment as this brings
+about a clear hierarchy, at least notationally, which I think
+sends the wrong message since what the piece tries to say
+is that spaces are all equally important, even though the
+notation doesn’t reflect this.
+27
+Underdetermined figures (2015-)
++ Fields
++ The prepared action
++ Glimpse of proximity spaces
+Ongoing (a version for strings, and plucked strings exists…)
+Field notation
+What is important here is the
+--The approaching action, the preparation framed, another glimpse of proximity spaces (as
+space of notated action)…
+Also an extreme form of Preparing-An-Action as material.
+28
+Underdetermined
+figures (2015-)
++ Fields
++ The prepared action
++ Glimpse of proximity spaces
+Ongoing (a version for strings, and plucked strings exists…)
+Field notation
+What is important here is the
+--The approaching action, the preparation framed, first glimpse of proximity spaces (as
+space of notated action)…
+Also an extreme form of Preparing-An-Action as material.
+29
+Underdetermined figures (2015-) - fragment
++ Fields
++ The prepared
+action
++ Glimpse of
+proximity spaces
+Underdetermined figures (2015)
+Performance/installation during DARE 2015 (De Bijloke Music Centre, Ghent, Belgium)
+Séverine Ballon, cello
+Video fragment
+Building the action, step by step as part of the performance (her interpretation), exploring
+the proximity space (which is rather large in this interpretation)
+Here the prepared action was to certain degree indeterminate as we saw in the
+instructions (below null line, the space beyond the strings is explored, what is within
+reach)…
+30
+Stilla #1 – (fl.+pno.) (2018)
+This minimalist approach.
+Silent movements, navigating instrumental landscapes, microscopic speeds…
+31
+Stilla #1 – (fl.+pno.) (2018)
+Stilla #1 – flute + piano – fragment (ca. 06:00-06:30)
+Performance Nordic House, Reykjavík
+Berglind María Tómasdóttir, flute & Tinna Þorsteinsdóttir, piano
+Silent movements, navigating instrumental landscapes, microscopic speeds…with
+occasional “silent” jumps.
+32
+Other proportions: rough path by extinction
+(virgula ligatura) – (pno.+sax) (2022)
+This is a fragment from the piano part of this piece Other proportions. And here I start to
+open up different kind of separation and proximity spaces as a defined area of activity,
+silent or not.
+Walk through:
+ZOOM-IN
+33
+Other proportions: rough path by extinction
+(virgula ligatura) – (pno.+sax) (2022)
+Performance at Leeds University, Contemporary Music Festival, February 2023
+ELISION Ensemble – Alex Waite, piano & Joshua Hyde, saxophone
+Walk through:
+34
+Abstract model:
+colliding proximity spaces
++ Silently active Zones (imperceptible secrets):
++ Instrument space // I-proximity space
++ Performer space // P-proximity space
++ Conceptual/imagination space
++ Occasionally colliding
+Coming back to the conceptual links, namely the separation & proximity spaces and seeing
+them as abstract models.
+Then it becomes part of the Methods: abstract modelling, moving open sets, clashing into
+each other “potential” borders. Clashing can create sound but can also simply mean
+occupying same space without emitting sound-particles, an intensified location.
+Next: defining what those spaces are, giving them locations and dimensionality (space for
+actions)
+These spaces can be further subdivided into more layers (as the drawings within the circles
+here represent), e.g. the performer-space can be divided into different activities of the
+hands, mouths, areas on the instrument, etc.
+Each area on the instrument space receives a proximity space (each point is considered as
+an open set), which extends the area/space into actual physical space (surrounding that
+area, creating the nearness/proximity space), which in turn becomes a movement space for
+the performer’s actions, this is the notated material, as all these spaces have to be defined
+notationally.
+35
+De/Re-coupling sound & silence
++Two movements of the Instrument-performer hybrid
++decoupling of sound and silence (production part vs.
+modulating part) -- zone of proximity
++ = silent actions = opening up proximity spaces
++Contradictions: action=sound, inaction=silence
+Applying the abstract model? (to different aspects of performance)
+Two movements (of the secret): influence (on surroundings), and doublings (inner and/or
+hyper secrets)
+The silent part of producing a sound through action, which is usually a part that modulates
+a force through a space (physical description), in wind instruments it’s airstream that gets
+modulated, in strings it’s a vibrated string. So, part of the body is always busy with silently
+modulating factors. These forces could be viewed as clandestine forces, a secret within
+performance, secret production of sound, and that is what my projects aims to do elevate
+or empower. One way of doing that is by enlarging the zone of activity, mapping its active
+field, creating new potentials. And thinking them through the zone of proximity so as to
+make them equal.
+Through notation that is inclusive of the impossible.
+36
+Notation: design and conceptual
+aspects
++Current work-in-progress: Zone of proximity (and the weakly
+interacting massive particles) - (rec.+vcl.) (2023-)
++Notational spaces, colliding spaces
++Micro-movements within, intensely fast/slow (imperceptible)
++Schizoanalysis
++Intensifiers (excitations in the field)
++Tempo containers
++Layerings
++Real vs. fictional elements (possible-impossibilities)
+Integrated into the notational system and the generation of material is Schizoanalysis which
+I see as opening up spaces (the becoming conscious, the groundless splitting of layers =
+interactions of the web of spaces)
+In Chaosmosis, Guattari explains that "rather than moving in the direction of reductionist
+modifications which simplify the complex", schizoanalysis "will work towards its
+complexification, its processual enrichment, towards the consistency of its virtual lines of
+bifurcation and differentiation, in short: towards its ontological heterogeneity”
+Opening up the imaginative dimension, which is not about execution or action but what
+precedes an action or accompanies them (and how that is influenced, or what can
+influence it): when things are not necessarily sounding, they become differently important
+in the notation (detail of another nature then precision), it might become a fictional aspect
+that informs the performer indirectly, or theoretically or philosophically, or in some other
+way. This opens up the strange space of fiction within the notational space. Examples of
+this is compactifications = hiding actions in time (see tempo subdivisions).
+-compactification?
+to make or become compact; esp of higher dimensions in space-time, to become tightly
+curved so as to be unobservable under normal circumstances
+37
+Metric structure element in intensifying the silence (fluctuating tempo-containers)
+37
+Zone of proximity (and the weakly
+interacting massive particles) - (rec.+vcl.)
+(2023-)
+Walk through:
+-Notational spaces // colliding spaces (Rec + Vcl.)
+-schizoanalysis
+-The two movements separated as silent actions occasionally colliding
+-intensifiers
+-the secret is hiding these actions, the secret can be an impossible action which is still part
+of reading the text.
+38
+Collaborations
++ELISION Ensemble – solos, duos, etc.
++Guitarist Pétur Jónasson (member of the Riot Ensemble)
++Others?
+I must stress that such a project is almost unthinkable without a collaboration with openminded,
+explorative performers. And I am lucky to have a working relationship with the
+ELISION Ensemble who are willing to explore this with me, as well as the classical guitarist
+Pétur Jónasson (of the Riot Ensemble). I am sure that the project will be shaped further
+through these collaborations, when I can integrate the performer’s insights, comments,
+perspectives, etc.
+39
+Aesthetics of The Clandestine?
++Perceived silent act reveals a secret without content.
++Balancing of silent activity/inactivity, silent micro-actions, nearsilent
+activity, occasional collisions (with sonic results, leaks)
++=> everted silence
++Social dimension: Intense activity being silenced, inaccessible
+domains, privacy issues (private worlds), cryptic means…
++Communication is always incomplete, always half-empty,
+always needs translation/interpretation/guesswork, always
+includes a secret, clandestine forces.
++Necessarily notational as the mapping of hidden layers
+This approach could be said to Advocate for the Aesthetics of the clandestine, which could
+be outlined as a challenge to the senses, in a way to supercharge the senses, to
+amplify them in contrast to contemporary culture that numbs the senses. It
+tries to capture the observed presence of something out of reach, it aims for emphasized
+tension produced between the perceptible and the imperceptible, or thrives exactly on that
+border space. This reflects several aspects of the world and contemporary society, and has
+therefore this social dimension.
+But also of communication in general. Silences are embedded in our language as gestures
+of hesitation, of breaks and pauses, but also as things that are not allowed to be said. So,
+communication is always incomplete or we could say full of secrets. And I’m asking how we
+can flip the proportions so to speak, so that we create a language of silence where sounds
+become the hesitations and pauses, or rather hesitations, secrets and breaks is all there is,
+where the imperceptible speaks.
+--
+Temporality?
+Presence?
+40
+---
+Dark matter = difficult to detect, beyond our technology, challenging our imagination and
+understanding? Wimps (are sort of a fiction, but mathematically made to fit our current
+understanding of the universe, these attempts at the limits of our knowledge where we are
+faced with a complete darkness that nevertheless leaves a trace of its own existence, a
+leaking secret.)
+Nadim Samman: aesthetics of the …hidden dimensions of our technological
+landscape
+Running counter to erroneous claims regarding a new culture of transparency
+and openness, such artworks address black sites, black boxes, and black hole
+The aim is also to supercharge the senses, to amplify them in contrast to
+contemporary culture that numbs the senses (Susan Buck-Morss Working on
+Walter Benjamin's texts, she talks about how aesthetics have been replaced by
+anesthetics)
+Deep learning?
+https://journals.sagepub.com/doi/10.1177/0263276420966386?icid=int.sj-abstract.similararticles.
+9
+“To simplify, an artificial neural-network system relies on layers of artificial
+neurons to process information. These layers of artificial neurons are connected
+and influence each other in a complex web of interacting units, somewhat like
+biological neurons are understood to do in a biological brain. A lower layer of
+neurons performs a computation and transmits this result to the layer above,
+enriching the final outcome of the layer at the top. What is obtained in each layer
+is a new representation, ‘which can be used as input for deeper layers’ (Bengio,
+2013: 4). A neural network is said to learn, then, because it can tweak its
+calculations and modify its interactions by tuning parameters via activation and
+back-propagation among layers until the desired output (i.e. the desired final
+representation) is produced. The network, however, is called deep if its
+structure encompasses intermediary ‘hidden’ layers between the input and
+the output.5 The architecture of a deep-learning system differs from that of a
+standard artificial neural network precisely because of the presence of these
+multiple non-linear hidden layers”
+“The strength of a deep neural network lies in its capacity to find non-linear
+patterns in large datasets and improve this extraction through iterative
+interactions”
+“Margaret Morrison observed that scientific inquiry ‘involves reconstructing or recasting
+nature in a specific form and investigating how it behaves or might behave under certain
+circumstances.’
+‘Although we can use mathematics to do this,’ Morrison continued,‘the notion of
+40
+‘‘reconstruction’’ can also be instantiated in other ways’(2015: 2). The operational black
+boxes of machine learning also seem to be one of these other ways, according to which
+epistemological reconstruction assumes a life of its own via algorithmic models that do not
+aim to represent and thus do not wish to explain.”
+Black-box algorithms, surveillance overload, the invasion of privacy, and at the same time
+obscure algorithms, non-transparency, post-theory state the AI + ML
+Anaesthetized bodies and aesthetics of the clandestine:
+https://www.youtube.com/watch?v=xciqyimUlNI
+“tension produced between the perceptible and the imperceptible”
+Political dimensions: against sound as dominant feature of music? (referring my own article
+re-notations…)
+Benjamin´s vindication of ¨politicizing¨ art. He claimed: ¨That politicization can mean
+recovering the instinctive power of the human bodily senses",
+40
+Further connections/reflections
++Social dimension: inaccessible domains, privacy issues
+(private worlds), cryptic means…transparency vs.
+inaccessibility
++Black-box algorithms
++Deep neural networks hidden layers
++Dark Matter (aesthetics)
++Presence of infinite secrecy?
++Temporality?
+I’m currently exploring and mapping more connections.
+The social dimension, the call for transparency on all levels of society, and this relates also
+to the black-box algorithms:
+The network, called deep neural network, a structure consisting of many intermediary
+‘hidden’ layers between the input and the output. The architecture of a deep-learning
+system differs from that of a standard artificial neural network precisely because of the
+presence of these multiple non-linear hidden layers, which cannot be transparent.
+Dark matter = difficult to detect, beyond our technology, challenging our imagination and
+understanding? Wimps, massive particles that are believed to be responsible for the mass
+that is missing in the universe, yet affecting all regular (sounding) matter (they are sort of a
+fiction, but mathematically made to fit our current understanding of the universe, these
+attempts at the limits of our knowledge where we are faced with a complete darkness that
+nevertheless leaves a trace of its own existence, a leaking secret.)
+So, maybe the secret was not invented by society as Deleuze said, but is a fundamental
+aspect of the universe.
+Other things I still need to figure out are questions of presence and temporality, ie. what
+sort of presence and temporality such performances can explore.
+41
+Nadim Samman: aesthetics of the …hidden dimensions of our technological
+landscape
+Running counter to erroneous claims regarding a new culture of transparency
+and openness, such artworks address black sites, black boxes, and black hole
+The aim is also to supercharge the senses, to amplify them in contrast to
+contemporary culture that numbs the senses (Susan Buck-Morss Working on
+Walter Benjamin's texts, she talks about how aesthetics have been replaced by
+anesthetics)
+Deep learning?
+https://journals.sagepub.com/doi/10.1177/0263276420966386?icid=int.sj-abstract.similararticles.
+9
+“To simplify, an artificial neural-network system relies on layers of artificial
+neurons to process information. These layers of artificial neurons are connected
+and influence each other in a complex web of interacting units, somewhat like
+biological neurons are understood to do in a biological brain. A lower layer of
+neurons performs a computation and transmits this result to the layer above,
+enriching the final outcome of the layer at the top. What is obtained in each layer
+is a new representation, ‘which can be used as input for deeper layers’ (Bengio,
+2013: 4). A neural network is said to learn, then, because it can tweak its
+calculations and modify its interactions by tuning parameters via activation and
+back-propagation among layers until the desired output (i.e. the desired final
+representation) is produced. The network, however, is called deep if its
+structure encompasses intermediary ‘hidden’ layers between the input and
+the output.5 The architecture of a deep-learning system differs from that of a
+standard artificial neural network precisely because of the presence of these
+multiple non-linear hidden layers”
+??Margaret Morrison observed that scientific inquiry ‘involves reconstructing or recasting
+nature in a specific form and investigating how it behaves or might behave under certain
+circumstances.’
+‘Although we can use mathematics to do this,’ Morrison continued, ‘the notion of
+‘‘reconstruction’’ can also be instantiated in other ways’(2015: 2). The operational black
+boxes of machine learning also seem to be one of these other ways, according to which
+epistemological reconstruction assumes a life of its own via algorithmic models that do not
+aim to represent and thus do not wish to explain.”
+41
+Thank you!
+Q:
+-essentialism, clarify!
+-do I need the secret, hidden aspects, why? Clarify!
+-closed boundary, I expect of the composition? How to open it up?
+-what would everted notation be?
+Theatatricality?? Becket…
+Certainly! "Modern Silence" is a paper by David Metzer that was published in the Journal of
+the American Musicological Society in 2012. The paper explores the concept of silence in
+modern music and how it has been used by composers to create a sense of tension and
+anticipation.
+Metzer begins by discussing the use of silence in John Cage's 4'33", a piece that consists
+entirely of silence. He argues that the piece challenges our understanding of music and
+raises important questions about the role of silence in music.
+Metzer then examines the use of silence in the music of Morton Feldman, a composer who
+used silence extensively in his compositions. He argues that for Feldman, silence was not
+just the absence of sound but an active element that shaped the listener's experience of
+the music.
+42
+Metzer also discusses the use of silence in the music of Gyorgy Ligeti, who used silence as a
+way of creating tension and contrast in his compositions. He argues that Ligeti's use of
+silence reflects his interest in the psychology of perception and the way that listeners process
+musical information.
+Finally, Metzer explores the use of silence in the music of Brian Ferneyhough, a composer
+who used silence as a way of challenging traditional musical structures and conventions. He
+argues that Ferneyhough's use of silence reflects his interest in exploring the boundaries of
+musical expression and the limits of the human ear.
+Overall, Metzer's paper offers a nuanced and insightful analysis of the use of silence in
+modern music. He argues that silence is not simply the absence of sound but an active
+element that composers can use to shape the listener's experience of the music.
+42
+43
+Types of silences (social dimension)
+Silences and perception?
+Jennifer Judkins in her article “The Aesthetics of Silence in Live Musical Performance''
+mentions “long unmeasured silences are given individual meaning and form by the tonal
+and rhythmic material surrounding them (their musical edges) and they are characterized
+both by these 22 edges and by physical gesture in performance” (Judkins 1997, 40)
+44

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Derivative Calculator</title>
+    <style>
+        svg {
+            border: 1px solid black;
+            cursor: crosshair;
+            margin: 20px;
+        }
+        .grid line {
+            stroke: lightgrey;
+            stroke-opacity: 0.5;
+            shape-rendering: crispEdges;
+        }
+        .grid path {
+            stroke: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Draw a Curve and Get Its Derivative</h1>
+    <svg id="drawingArea" width="800" height="400">
+        <g class="grid x-grid" id="xGrid"></g>
+        <g class="grid y-grid" id="yGrid"></g>
+        <g id="curve"></g>
+    </svg>
+    <svg id="derivativeArea" width="800" height="400">
+        <g class="grid x-grid" id="xGridDerivative"></g>
+        <g class="grid y-grid" id="yGridDerivative"></g>
+        <g id="derivative"></g>
+    </svg>
+    <button onclick="calculateAndDrawDerivative()">Calculate Derivative</button>
+    <script>
+        const svgDrawing = document.getElementById('drawingArea');
+        const svgDerivative = document.getElementById('derivativeArea');
+        const curveGroup = document.getElementById('curve');
+        const derivativeGroup = document.getElementById('derivative');
+        let isDrawing = false;
+        let currentPath = null;
+        let points = [];
+
+        function createGrid(svg, xGridId, yGridId) {
+            const xGrid = document.getElementById(xGridId);
+            const yGrid = document.getElementById(yGridId);
+
+            for (let i = 50; i < svg.getAttribute('width'); i += 50) {
+                xGrid.innerHTML += `<line x1="${i}" x2="${i}" y1="0" y2="${svg.getAttribute('height')}"></line>`;
+            }
+
+            for (let i = 50; i < svg.getAttribute('height'); i += 50) {
+                yGrid.innerHTML += `<line x1="0" x2="${svg.getAttribute('width')}" y1="${i}" y2="${i}"></line>`;
+            }
+        }
+
+        createGrid(svgDrawing, 'xGrid', 'yGrid');
+        createGrid(svgDerivative, 'xGridDerivative', 'yGridDerivative');
+
+        svgDrawing.addEventListener('mousedown', startDrawing);
+        svgDrawing.addEventListener('mousemove', draw);
+        svgDrawing.addEventListener('mouseup', endDrawing);
+        svgDrawing.addEventListener('mouseleave', endDrawing);
+
+        function startDrawing(event) {
+            isDrawing = true;
+            currentPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            currentPath.setAttribute('stroke', 'black');
+            currentPath.setAttribute('stroke-width', '2');
+            currentPath.setAttribute('fill', 'none');
+            currentPath.setAttribute('d', `M${event.offsetX},${event.offsetY}`);
+            curveGroup.appendChild(currentPath);
+            points.push({ x: event.offsetX, y: event.offsetY });
+        }
+
+        function draw(event) {
+            if (!isDrawing) return;
+            const d = currentPath.getAttribute('d') + ` L${event.offsetX},${event.offsetY}`;
+            currentPath.setAttribute('d', d);
+            points.push({ x: event.offsetX, y: event.offsetY });
+        }
+
+        function endDrawing() {
+            isDrawing = false;
+        }
+
+        function getPathPoints(path) {
+            let length = path.getTotalLength();
+            let points = [];
+            for (let i = 0; i <= length; i += length / 1000) {
+                let point = path.getPointAtLength(i);
+                points.push({ x: point.x, y: point.y });
+            }
+            return points;
+        }
+
+        function calculateDerivative(points) {
+            let derivatives = [];
+            for (let i = 0; i < points.length - 1; i++) {
+                let dx = points[i + 1].x - points[i].x;
+                let dy = points[i + 1].y - points[i].y;
+                let slope = dy / dx;
+                derivatives.push({ x: points[i].x, y: slope * 50 + 200 }); // Scaled and shifted to fit canvas
+            }
+            return derivatives;
+        }
+
+        function createPathFromPoints(points) {
+            let pathData = points.map((p, i) => (i === 0 ? `M${p.x},${p.y}` : `L${p.x},${p.y}`)).join(' ');
+            let newPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            newPath.setAttribute('d', pathData);
+            newPath.setAttribute('stroke', 'red');
+            newPath.setAttribute('stroke-width', '2');
+            newPath.setAttribute('fill', 'none');
+            return newPath;
+        }
+
+        function calculateAndDrawDerivative() {
+            if (!currentPath) return;
+            const pathPoints = getPathPoints(currentPath);
+            const derivatives = calculateDerivative(pathPoints);
+            const derivativePath = createPathFromPoints(derivatives);
+            derivativeGroup.innerHTML = '';  // Clear previous derivative path
+            derivativeGroup.appendChild(derivativePath);
+        }
+    </script>
+</body>
+</html>
