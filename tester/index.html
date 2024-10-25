@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Music Notation Tunnel</title>
+    <style>
+        #canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const image = new Image();
+        image.src = 'https://cdn.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/https://www.filepicker.io/api/file/0or9pA8kSLWRaWoYFDRE';
+
+        let centerX = canvas.width / 2;
+        let centerY = canvas.height / 2;
+
+        let angle = 0;
+        let zoom = 1;
+
+        function render() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const imageWidth = image.width * zoom;
+            const imageHeight = image.height * zoom;
+
+            const x = centerX - imageWidth / 2;
+            const y = centerY - imageHeight / 2;
+
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.rotate(angle);
+            ctx.translate(-centerX, -centerY);
+            ctx.drawImage(image, x, y, imageWidth, imageHeight);
+            ctx.restore();
+
+            angle += 0.001;
+            requestAnimationFrame(render);
+        }
+
+        function handleWheelEvent(event) {
+            event.preventDefault();
+
+            zoom += event.deltaY * -0.01;
+            zoom = Math.max(0.1, zoom);
+            zoom = Math.min(10, zoom);
+        }
+
+        function handleMouseMove(event) {
+            const rect = canvas.getBoundingClientRect();
+            centerX = event.clientX - rect.left;
+            centerY = event.clientY - rect.top;
+        }
+
+        canvas.addEventListener('wheel', handleWheelEvent);
+        canvas.addEventListener('mousemove', handleMouseMove);
+
+        render();
+    </script>
+</body>
+</html>

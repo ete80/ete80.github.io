@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/@free-side/audioworklet-polyfill/dist/audioworklet-polyfill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Linearity with knots in 2D</title>
+  </head>
+
+  <body>
+    <b>Linearity with knots in 2D (in the longrun it will find ways of hiding)</b>
+    <br>
+    <small>-Einar Torfi Einarsson (2023)-</small>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+    
+    <button onclick="toggleAudio()">Toggle Audio</button>
+  
+  <script>
+    function requestFullscreen() {
+      let elem = document.documentElement; // or document.getElementById("myDiv");
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+        resizeCanvas(windowWidth, windowHeight);
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+        resizeCanvas(screen.width, screen.height);
+      }
+    }
+
+    function toggleAudio() {
+      if (getAudioContext().state !== 'running') {
+        getAudioContext().resume();
+      } else {
+        getAudioContext().suspend();
+      }
+    }
+  </script>
+  </body>
+
+</html>

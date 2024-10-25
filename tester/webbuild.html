@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Website Builder</title>
+  <style>
+    #template-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .template {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    #editor-container {
+      display: none;
+    }
+
+    #editor {
+      border: 1px solid black;
+      height: 400px;
+      margin-bottom: 10px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="template-container">
+    <h1>Select a template:</h1>
+    <div class="template">
+      <img src="template1.jpg" alt="Template 1">
+    </div>
+    <div class="template">
+      <img src="template2.jpg" alt="Template 2">
+    </div>
+  </div>
+
+  <div id="editor-container">
+    <h1>Edit your website:</h1>
+    <div id="editor">
+      <!-- Elements added by user will appear here -->
+    </div>
+    <button id="save-button">Save Changes</button>
+  </div>
+
+  <script>
+    // Get references to the template and editor containers
+    const templateContainer = document.getElementById("template-container");
+    const editorContainer = document.getElementById("editor-container");
+
+    // Get references to the template images
+    const template1 = document.querySelector("#template-container img:nth-child(1)");
+    const template2 = document.querySelector("#template-container img:nth-child(2)");
+
+    // Add click event listeners to the template images
+    template1.addEventListener("click", () => {
+      templateContainer.style.display = "none";
+      editorContainer.style.display = "block";
+    });
+
+    template2.addEventListener("click", () => {
+      templateContainer.style.display = "none";
+      editorContainer.style.display = "block";
+    });
+
+    // Get references to the editor and save button
+    const editor = document.getElementById("editor");
+    const saveButton = document.getElementById("save-button");
+
+    // Add click event listener to the save button
+    saveButton.addEventListener("click", () => {
+      const html = editor.innerHTML;
+      // Send HTML to server for saving or download
+    });
+  </script>
+</body>
+</html>

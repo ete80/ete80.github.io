@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smoothie.js Time Series Graph</title>
+    <script type="text/javascript" src="smoothie.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+      #mycanvas1 {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Real-Time Data Visualization</h1>
+    <p>This is a real-time graph demonstrating varying data trends over time.</p>
+    <canvas id="mycanvas1" width="900" height="225"></canvas>
+    <script type="text/javascript">
+      (function() {
+        var line1 = new TimeSeries();
+
+        var areas = {
+          'A': { min: 300, max: 600, static: false },
+          'B': { min: 1300, max: 1900, static: false },
+          'C': { min: 1900, max: 2500, static: false },
+          'D': { min: 2000, max: 2500, static: {min: 0.45, max: 0.55} },
+          'E': { min: 100, max: 200, static: {min: 0.45, max: 0.55} }
+        };
+        
+        var currentArea = 'A';
+
+        function appendRandomData() {
+          var value;
+          if (areas[currentArea].static) {
+            value = areas[currentArea].static.min + Math.random() * (areas[currentArea].static.max - areas[currentArea].static.min);
+          } else {
+            value = Math.random();
+          }
+          line1.append(new Date().getTime(), value);
+
+          // generate a random time between current area range
+          var delay = areas[currentArea].min + Math.random() * (areas[currentArea].max - areas[currentArea].min);
+          setTimeout(appendRandomData, delay);
+        }
+
+        // change the area randomly
+        function changeArea() {
+          var keys = Object.keys(areas);
+          currentArea = keys[Math.floor(Math.random() * keys.length)];
+
+          // generate a random time for next area change between 10 and 23 seconds
+          var nextChange = 10000 + Math.random() * 13000;
+          setTimeout(changeArea, nextChange);
+        }
+
+        // start the random data appending
+        appendRandomData();
+
+        // start changing areas
+        changeArea();
+
+        var smoothie = new SmoothieChart({millisPerPixel:36,grid:{millisPerLine:3000},labels:{disabled:true},timestampFormatter:SmoothieChart.timeFormatter});
+        smoothie.addTimeSeries(line1, { strokeStyle:'rgb(255, 136, 0)', lineWidth:2 });
+        smoothie.streamTo(document.getElementById("mycanvas1"), 1000 /*delay*/); 
+      })();
+    </script>
+  </body>
+</html>
