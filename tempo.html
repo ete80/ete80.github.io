@@ -32,6 +32,7 @@
     .sidebar ul li a {
       text-decoration: none;
       color: #333;
+      cursor: pointer;
     }
     .sidebar ul li ul {
       padding-left: 15px;
@@ -40,6 +41,11 @@
     .content {
       padding: 20px;
       flex: 1;
+      display: none; /* Hidden by default */
+    }
+    /* Active content */
+    .content.active {
+      display: block;
     }
   </style>
 </head>
@@ -49,39 +55,71 @@
   <div class="sidebar">
     <h3>Website Structure</h3>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#text">Text</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" onclick="showContent('home')">Home</a></li>
+      <li><a href="#" onclick="showContent('about')">About</a></li>
+      <li><a href="#" onclick="showContent('text')">Text</a></li>
+      <li><a href="#" onclick="showContent('contact')">Contact</a></li>
       <li>Works
         <ul>
-          <li><a href="#works-instruments">Works for Musical Instruments</a></li>
-          <li><a href="#works-notation">Other Notation-Works</a></li>
-          <li><a href="#discography">Discography</a></li>
+          <li><a href="#" onclick="showContent('works-instruments')">Works for Musical Instruments</a></li>
+          <li><a href="#" onclick="showContent('works-notation')">Other Notation-Works</a></li>
+          <li><a href="#" onclick="showContent('discography')">Discography</a></li>
         </ul>
       </li>
     </ul>
   </div>
 
   <!-- Main Content Area -->
-  <div class="content">
-    <h2 id="about">About</h2>
+  <div class="content" id="home">
+    <h2>Home</h2>
+    <p>Welcome to the home page.</p>
+  </div>
+
+  <div class="content" id="about">
+    <h2>About</h2>
     <p>This is the About section.</p>
+  </div>
 
-    <h2 id="text">Text</h2>
+  <div class="content" id="text">
+    <h2>Text</h2>
     <p>This is the Text section.</p>
+  </div>
 
-    <h2 id="contact">Contact</h2>
+  <div class="content" id="contact">
+    <h2>Contact</h2>
     <p>This is the Contact section.</p>
+  </div>
 
-    <h2 id="works-instruments">Works for Musical Instruments</h2>
+  <div class="content" id="works-instruments">
+    <h2>Works for Musical Instruments</h2>
     <p>Content related to musical instrument works.</p>
+  </div>
 
-    <h2 id="works-notation">Other Notation-Works</h2>
+  <div class="content" id="works-notation">
+    <h2>Other Notation-Works</h2>
     <p>Content related to other notation-works.</p>
+  </div>
 
-    <h2 id="discography">Discography</h2>
+  <div class="content" id="discography">
+    <h2>Discography</h2>
     <p>Content for the discography.</p>
   </div>
 
+  <script>
+    function showContent(sectionId) {
+      // Hide all content sections
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Show the selected content
+      const selectedContent = document.getElementById(sectionId);
+      if (selectedContent) {
+        selectedContent.classList.add('active');
+      }
+    }
+
+    // Display Home by default
+    showContent('home');
+  </script>
 </body>
 </html>
