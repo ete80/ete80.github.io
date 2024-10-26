@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Structure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #f4f4f4;
+      padding: 15px;
+      height: 100vh;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 5px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      cursor: pointer;
+    }
+    .sidebar ul li ul {
+      padding-left: 15px;
+    }
+    /* Main Content */
+    .content {
+      padding: 20px;
+      flex: 1;
+      display: none; /* Hidden by default */
+    }
+    /* Active content */
+    .content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar for Folder/File Structure -->
+  <div class="sidebar">
+    <h3>Website Structure</h3>
+    <ul>
+      <li><a href="#" onclick="showContent('home')">Home</a></li>
+      <li><a href="#" onclick="showContent('about')">About</a></li>
+      <li>Text
+        <ul>
+          <li><a href="#" onclick="showContent('text')">Text (Main)</a></li>
+          <li><a href="#" onclick="showContent('text-sub1')">Subsite 1</a></li>
+          <li><a href="#" onclick="showContent('text-sub2')">Subsite 2</a></li>
+          <li><a href="#" onclick="showContent('text-sub3')">Subsite 3</a></li>
+          <li><a href="#" onclick="showContent('text-sub4')">Subsite 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+      <li>Works
+        <ul>
+          <li><a href="#" onclick="showContent('works-instruments')">Works for Musical Instruments</a></li>
+          <li><a href="#" onclick="showContent('works-notation')">Other Notation-Works</a></li>
+          <li><a href="#" onclick="showContent('discography')">Discography</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content" id="home">
+    <h2>Home</h2>
+    <p>Welcome to the home page.</p>
+  </div>
+
+  <div class="content" id="about">
+    <h2>About</h2>
+    <p>This is the About section.</p>
+  </div>
+
+  <div class="content" id="text">
+    <h2>Main Text Section</h2>
+    <p>This is the main landing page for the Text section. It provides an overview or introduction to the subtopics.</p>
+  </div>
+
+  <div class="content" id="text-sub1">
+    <h2>Text - Subsite 1</h2>
+    <p>Content for Subsite 1 of Text.</p>
+  </div>
+
+  <div class="content" id="text-sub2">
+    <h2>Text - Subsite 2</h2>
+    <p>Content for Subsite 2 of Text.</p>
+  </div>
+
+  <div class="content" id="text-sub3">
+    <h2>Text - Subsite 3</h2>
+    <p>Content for Subsite 3 of Text.</p>
+  </div>
+
+  <div class="content" id="text-sub4">
+    <h2>Text - Subsite 4</h2>
+    <p>Content for Subsite 4 of Text.</p>
+  </div>
+
+  <div class="content" id="contact">
+    <h2>Contact</h2>
+    <p>This is the Contact section.</p>
+  </div>
+
+  <div class="content" id="works-instruments">
+    <h2>Works for Musical Instruments</h2>
+    <p>Content related to musical instrument works.</p>
+  </div>
+
+  <div class="content" id="works-notation">
+    <h2>Other Notation-Works</h2>
+    <p>Content related to other notation-works.</p>
+  </div>
+
+  <div class="content" id="discography">
+    <h2>Discography</h2>
+    <p>Content for the discography.</p>
+  </div>
+
+  <script>
+    function showContent(sectionId) {
+      // Hide all content sections
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Show the selected content
+      const selectedContent = document.getElementById(sectionId);
+      if (selectedContent) {
+        selectedContent.classList.add('active');
+      }
+    }
+
+    // Display Home by default
+    showContent('home');
+  </script>
+</body>
+</html>
