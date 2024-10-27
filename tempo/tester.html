@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einar Torfi Einarsson</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+  /* Page container for the three-part layout */
+  .page-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 183px;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      position: fixed;
+      padding: 15px;
+      height: 100vh;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+      color: #fff;
+    }
+    .sidebar::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .sidebar h3,
+    .sidebar ul {
+      position: relative;
+      z-index: 2;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 5px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    .sidebar ul li ul {
+      padding-left: 15px;
+      display: none; /* Hidden by default for collapsible effect */
+    }
+    /* Main Content */
+    .content {
+      padding: 20px;
+      flex: 1;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      color: #333;
+      width: 800px;
+      margin-left: 183px;
+      
+    }
+    .content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 1;
+    }
+    .content > * {
+      position: relative;
+      z-index: 2;
+    }
+    .content h2 {
+      margin-top: 0;
+    }
+    /* Active content */
+    .content:not(.active) {
+      display: none;
+    }
+  /* Right Bar */
+  .right-bar {
+    width: 300px;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+<body>
+<div class="page-container">
+  <!-- Sidebar for Folder/File Structure -->
+  <div class="sidebar">
+    <h5>Einar Torfi Einarsson</h5>
+    <ul>
+      <li><a href="#" onclick="showContent('home')">Home</a></li>
+      <li><a href="#" onclick="showContent('about')">About</a></li>
+      <li>
+        <a href="#" onclick="showContent('works'); toggleSubmenu('works-submenu')">Works</a>
+        <ul id="works-submenu">
+          <li><a href="#" onclick="showContent('works-instruments')">Works for Musical Instruments</a></li>
+          <li><a href="#" onclick="showContent('works-notation')">Other Notation-Works</a></li>
+          <li><a href="#" onclick="showContent('discography')">Discography</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="showContent('text'); toggleSubmenu('text-submenu')">Text</a>
+        <ul id="text-submenu">
+          <li><a href="#" onclick="showContent('text-sub1')">Subsite 1</a></li>
+          <li><a href="#" onclick="showContent('text-sub2')">Subsite 2</a></li>
+          <li><a href="#" onclick="showContent('text-sub3')">Subsite 3</a></li>
+          <li><a href="#" onclick="showContent('text-sub4')">Subsite 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content active" id="home">
+    <h2>Home</h2>
+    <p>Welcome</p>
+  <div class="image-container" style="position: relative; width: 400px; height: 300px;">
+    <img src="sketches_1.png" alt="Image 1" style="position: absolute; top: 0; left: 200px; width: 100%; opacity: 0.8;">
+    <img src="sketches_2.jpg" alt="Image 2" style="position: absolute; top: 40px; left: 40px; width: 100%; opacity: 0.8;">
+    <img src="sketches_3.png" alt="Image 3" style="position: absolute; top: 200px; left: 200px; width: 100%; opacity: 0.4;">
+    <img src="sketches_4.png" alt="Image 3" style="position: absolute; top: 300px; left: 300px; width: 100%; opacity: 0.4;">
+    <img src="sketches_5.png" alt="Image 3" style="position: absolute; top: 150px; left: 500px; width: 100%; opacity: 0.4;">
+    <img src="sketches_6.png" alt="Image 3" style="position: absolute; top: 70px; left: 350px; width: 100%; opacity: 0.4;">
+    <img src="sketches_7.jpg" alt="Image 3" style="position: absolute; top: 20px; left: 580px; width: 100%; opacity: 0.4;">
+  </div>
+  <!-- Add a canvas element for the chart -->
+  <canvas id="chart" width="400" height="120" style="transform: rotate(70deg);"></canvas>
+
+  <!-- SmoothieChart Script -->
+  <script type="text/javascript" src="smoothie.js"></script>
+  <script type="text/javascript">
+    // Randomly add a data point every 400ms
+    var random = new TimeSeries();
+    setInterval(function() {
+      random.append(Date.now(), Math.random() * 10000);
+    }, 300);
+
+    function createTimeline() {
+      var chart = new SmoothieChart({millisPerPixel:4,labels:{fillStyle:'transparent'},tooltipLine:{strokeStyle:'#bbbbbb'}});
+      chart.addTimeSeries(random, { strokeStyle:'#0698a7',fillToBottom:false,fillStyle:'rgba(133,117,3,0.30)', lineWidth: 3 });
+      chart.streamTo(document.getElementById("chart"), 300);
+    }
+
+    // Run the function after the page is loaded
+    window.onload = createTimeline;
+  </script>
+
+</div>
+
+  <div class="content" id="about">
+    <h2>About</h2>
+    <p>
+Einar Torfi Einarsson (1980) was born in Iceland and studied initially composition at Reykjavik College of Music. He received his Ph.D. in composition from the University of Huddersfield where he studied with Aaron Cassidy on the Jonathan Harvey Scholarship. Previous composition studies were with Fabio Nieder at the Conservatorium van Amsterdam, where he also studied with Richard Ayres and Willem Jeths, graduating with a MMus degree in 2009. Einar did also study with Beat Furrer at the Kunstuniversität in Graz. In 2008, he was a composer in residence at the Ligeti Academy in Amsterdam organized by Asko/Schönberg Ensemble. He has attended masterclasses and private lessons from a.o. Salvatore Sciarrino, Brian Ferneyhough, Emmanuel Nunes and Jonathan Harvey.<br>
+  His music has been performed by ensembles such as Klangforum Wien, Ensemble Intercontemporain, ELISION Ensemble, Nieuw Ensemble, Asko Ensemble, Caput Ensemble, Iceland Symphony Orchestra and Holland Symfonia. His music was featured on the International Rostrum of Composers and has been performed and broadcasted in Scandinavia, Netherlands, France, Austria, UK and Germany.<br>
+    Einar received Artist Stipend (2012, 2013, 2018) from the Ministry of Education, Science and Culture (Iceland) and has previously received grants from Musica Nova foundation Iceland, Composers Fund 365 and Reykjavik City. During the Dutch Music Days festival 2008 his piece Nine Tensions was awarded the Henriëtte Bosmans Prize. Also a finalist for the Buma Toonzetters Prize 2009, winner in the category: "best ensemble piece". His orchestra piece Apertures was selected for the Young Composers Project 2009 organized by Holland Symfonia and premiered during the Gaudeamus Music Week 2009. A winner in the impuls Composition Competition 2009, which awarded him a commission to write a piece for Klangforum Wien (premiere on impuls 2011). In 2010 Einar was commissioned by the Ensemble Intercontemporain / IRCAM Reading Panel (Tremplin Commission programme) to write a piece for Ensemble Intercontemporain (premiered in Centre Pompidou in 2012).<br>
+    His music has been performed on festivals such as: Huddersfield Contemporary Music Festival, Transit Festival, impuls festival, Dutch Music Days, Nordlichter (Berlin), Gaudeamus Music Week, Time of Music, Dark Music Days, Ung Nordisk Musik and Nordic Music Days.<br>
+<br>
+During 2010-11 he worked as a part-time lecturer in Composition at the University of Huddersfield. He was a Research Fellow at the Orpheus Research Centre in Music (ORCiM) at the Orpheus Institute in Ghent in 2013-2014, and is currently Professor of Composition at the Iceland University of the Arts.<br>
+<br>
+His recent music focuses experimentally on notation, performance physicality and nonlinear and non-teleological structures.<br>
+</p>
+  </div>
+
+  <div class="content" id="works">
+    <h2>Works</h2>
+<p>R E C E N T - - - A C T I V I T Y<br>
+<br>    
+<b>Negative Dynamics I(a/b)</b><br>
+(both versions)<br>
+for solo string instrument<br>
+Dejana Sekulic, Festival Síntese (+contemporary insights), 28 September 2024, Castelo Branco, Portugal.<br>
+---<br>
+
+<b>Other proportions: rough path by extinction (virgula ligatura)</b><br>
+for saxophone and piano<br>
+ELISION Ensemble: Alex Waite (piano) and Joshua Hyde (saxophone), 28 April 2024, Klangbrücken Festival, Hannover, Germany.<br>
+---<br>
+<b>Scalar</b><br>
+for indeterminate instrumentation<br>
+ELISION Ensemble: Kathryn Schulmeister (contrabass) and Rohan Dasika (contrabass), Melbourne Recital Cenre, 9 September 2023.<br>
+---<br>
+<b>Other proportions: rough path by extinction (virgula ligatura)</b><br>
+for saxophone and piano<br>
+ELISION Ensemble: Alex Waite (piano) and Joshua Hyde (saxophone), 11 February 2023, International Contemporary Music Festival, Leeds University, Leeds, UK.<br>
+---<br>
+<b>Grapher morphogenetics IIa</b><br>
+for string instrument<br> 
+2 March 2022, Phipps Hall, University of Huddersfield. Dejana Sekulic (violin).<br>
+---<br>
+<b>analogues/dialogues</b><br>
+for bass clarinet and bassoon<br> 
+Ingólfur Vilhjálmsson (cl.) and James Aylward (bsn.), 4 January 2022, BKA Theater, Unerhörte musik, Berlin.<br>
+---<br>
+**SCENE #21 from Scenes you would like to hear**<br>
+for two performers, 16 January 2020, Mengi, Reykjavik.
+---<br>
+**Memory is a three-way road**<br>
+for memory, exhibited in the Phonemes - Exhibiting Music exhibition catalogue, 26 January - 3 March 2019, Hafnarborg.
+---<br>
+**stilla #1**<br>
+for Berglind María Tómasdóttir (flute) and Tinna Þorsteinsdóttir (piano), 10 Janúary 2019, Nordic House, Reykjavik
+---<br>
+**Countability - part 1: 0-221 (quantity = quality)**<br>
+for any kind and amount of instruments, 2 June 2018, Mengi, Reykjavik
+---<br>
+**Urban/Nonurban distancing**<br>
+for two performers, COW concert series, April 27, 2018, Mengi, Reykjavik, Iceland
+---<br>
+**Tendencies**<br>
+for ensemble, Phace ensemble, March 22, 2018, Konserthaus, Wien
+---<br>
+**Pencil Piece I // Eraser Piece II**<br>
+Performance of both pieces simultaneously on the COW concert series, March 7, 2018, Mengi, Reykjavik, Iceland
+---<br>
+**Music for Political Spaces (partial #2, osmosis)**<br>
+for flute and video
+premiere: Berglind María Tómasdóttir, January 27, 2018, Dark Music Days, Húrra, Iceland
+---<br>
+**Music for Political Spaces (partial #1, osmosis)**<br>
+for flute and video
+premiere: Berglind María Tómasdóttir, Novermber 3, 2017, Lækjargata 12 (now demolished), Reykjavik, Iceland
+---<br>
+**Desiring-Machines. partial-object 0.0833**<br>
+for trombone & cello
+premiere: Two New Duo, January 18, 2017, Drückereihalle im Ackermannshof, Basel, Switzerland
+---<br>
+**foldings/inclusions**<br>
+for (contra-)bass-clarinet
+premiere: Ingólfur Vilhjálmsson, April 24, 2016, Hljóðön, Hafnarborg, Iceland
+---<br>
+**Schumann-Sculpture (remnants + deracination)**<br>
+Installation commissioned by Cycle Music and Arts Festival 2015, 13 Aug-13 Oct, Kópavogur, Iceland. Part of the New Release exhibition, Gerðarberg, August 13 - October 13, 2015. (images)
+---<br>
+**Theory-Fiction I: non-corresponding variance**<br>
+for three toy pianos and imaginary accompanyment (one player)
+premiere: Tinna Þorsteinsdóttir, 1 February 2015, Dark Music Days 2015
+---<br>
+**Desiring-Machines: partial-object 0.0417**<br>
+for any flute
+Zuflucht Festival, Kristjana Helgadóttir (piccolo), 19 October 2014,
+---<br>
+**Converging the measure on a non-scalable surface**<br>
+for any kind of event
+47 hour performance during the Orpheus Reserach Festival 2014 (1-3 Oct), Ghent, Belgium
+---<br>
+**Re-Notations I-IV**<br>
+exhibited as part of the PIANO show on Reykjavik Art Festival 2014
+May 29-June 30
+---<br>
+**Negative Dynamics II: entangled strata**<br>
+for a pianist
+premiere: Tinna Þorsteinsdóttir, 31 May 2014, National Gallery of Iceland, Reykjavík
+---<br>
+**Desiring-Machines: partial-object 0.1667**<br>
+for oboe, violin, viola, cello
+premiere and CD release: Stolz Quartet, 26 February 2014, Splendor, Amsterdam
+---<br>
+**Pencil Piece I: Music is What Music Doesn't**<br>
+for minimum one graphite pencil
+premiere: Vanessa Tomlinson, 17 December 2013, Orpheus Institute, Ghent, Belgium
+---<br>
+**Desiring-Machines: partial-object 0.0417**<br>
+for any flute
+premiere: Kristjana Helgadóttir, 29 October 2013, Nordic House, Reykjavík
+</p>
+  </div>
+
+  <div class="content" id="works-instruments">
+    <h2>Works for Musical Instruments</h2>
+    <p>Content related to musical instrument works.</p>
+  </div>
+
+  <div class="content" id="works-notation">
+    <h2>Other Notation-Works</h2>
+    <p>Content related to other notation-works.</p>
+  </div>
+
+  <div class="content" id="discography">
+    <h2>Discography</h2>
+    <p>Content for the discography.</p>
+  </div>
+
+  <div class="content" id="text">
+    <h2>Text</h2>
+    <p>This is the main Text section, providing an overview of the subsections available below.</p>
+  </div>
+
+  <div class="content" id="text-sub1">
+    <h2>Text - Subsite 1</h2>
+    <p>Content for Subsite 1 of Text.</p>
+  </div>
+
+  <div class="content" id="text-sub2">
+    <h2>Text - Subsite 2</h2>
+    <p>Content for Subsite 2 of Text.</p>
+  </div>
+
+  <div class="content" id="text-sub3">
+    <h2>Text - Subsite 3</h2>
+    <p>Content for Subsite 3 of Text.</p>
+  </div>
+
+  <div class="content" id="text-sub4">
+    <h2>Text - Subsite 4</h2>
+    <p>Content for Subsite 4 of Text.</p>
+  </div>
+
+  <div class="content" id="contact">
+    <h2>Contact</h2>
+    <p>This is the Contact section.</p>
+  </div>
+
+  <script>
+    function showContent(sectionId) {
+      // Hide all content sections
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Show the selected content
+      const selectedContent = document.getElementById(sectionId);
+      if (selectedContent) {
+        selectedContent.classList.add('active');
+      }
+    }
+
+    function toggleSubmenu(submenuId) {
+      const submenu = document.getElementById(submenuId);
+      if (submenu) {
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+      }
+    }
+
+    // Display Home by default
+    showContent('home');
+  </script>
+
+  <!-- Right Bar -->
+  <div class="right-bar">
+    <h3></h3>
+    <p>ete</p>
+  </div>
+</div>
+
+</body>
+</html>
