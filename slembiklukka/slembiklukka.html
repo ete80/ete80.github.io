@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Clocks</title>
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
         .clock-container {
             display: flex;
             gap: 20px;
-            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         canvas {
             background: white;
             border: 1px solid black;
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
+    <h1>Slembiklukka</h1>
     <div class="clock-container" id="clocks"></div>
     <script>
         function getRandomTime() {
@@ -74,8 +91,8 @@
 
         function createClock() {
             const canvas = document.createElement("canvas");
-            canvas.width = 100;
-            canvas.height = 100;
+            canvas.width = 150;
+            canvas.height = 150;
             document.getElementById("clocks").appendChild(canvas);
 
             let time = getRandomTime();
@@ -90,6 +107,11 @@
                 numbers = shuffleNumbers();
                 drawClock(canvas, time, numbers);
             }, Math.random() * 6000 + 1000);
+
+            setInterval(() => {
+                time.seconds = (time.seconds + 1) % 60;
+                drawClock(canvas, time, numbers);
+            }, Math.random() * 600 + 700);
 
             drawClock(canvas, time, numbers);
         }
