@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phi-based Frequency Generator</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f8f8f8; }
+    input { margin: 5px; padding: 5px; }
+    table { margin-top: 20px; border-collapse: collapse; }
+    th, td { padding: 6px 12px; border: 1px solid #ccc; text-align: right; }
+  </style>
+</head>
+<body>
+
+<h2>Φ-based Frequency & Amplitude Generator</h2>
+
+<label>Base Frequency (Hz): <input type="number" id="baseFreq" value="65.41" step="0.01"></label><br>
+<label>Resolution (k): <input type="number" id="kVal" value="1" step="0.1"></label><br>
+<label>Number of Steps: <input type="number" id="steps" value="15"></label><br>
+<button onclick="generate()">Generate Table</button>
+
+<div id="output"></div>
+
+<script>
+function generate() {
+  const phi = (1 + Math.sqrt(5)) / 2;
+  const f = parseFloat(document.getElementById("baseFreq").value);
+  const k = parseFloat(document.getElementById("kVal").value);
+  const steps = parseInt(document.getElementById("steps").value);
+  let html = '<table><tr><th>Step (n)</th><th>Frequency (Hz)</th><th>Amplitude (relative)</th></tr>';
+
+  for (let n = 0; n < steps; n++) {
+    const freq = f * Math.pow(phi, n / k);
+    const amp = 1 / Math.pow(phi, n); // simple exponential decay
+    html += `<tr><td>${n}</td><td>${freq.toFixed(8)}</td><td>${amp.toFixed(8)}</td></tr>`;
+  }
+
+  html += '</table>';
+  document.getElementById("output").innerHTML = html;
+}
+</script>
+
+</body>
+</html>
